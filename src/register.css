@@ -1,0 +1,177 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  padding-top: 90px; /* space for fixed navbar */
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #081726;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.logo {
+  color: #38bdf8;
+}
+
+.navbar nav a {
+  color: #cbd5f5;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #38bdf8;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  background: rgba(2, 6, 23, 0.9);
+  border: 1px solid #38bdf8;
+
+  padding: 35px;
+  width: 500px;
+
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+
+  margin: 40px auto; /* center horizontally */
+}
+
+/* ================= HEADINGS ================= */
+.container h1 {
+  text-align: center;
+  color: #38bdf8;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.info {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: #a5f3fc;
+}
+
+/* ================= FORM ================= */
+label {
+  font-size: 0.8rem;
+  color: #93c5fd;
+  margin-top: 12px;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+
+  background: transparent;
+  border: 1px solid #38bdf8;
+  border-radius: 8px;
+
+  color: white;
+  outline: none;
+}
+
+/* TEXTAREA */
+textarea {
+  resize: none;
+  height: 70px;
+}
+
+/* ROW (2 inputs side by side) */
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.row div {
+  flex: 1;
+}
+
+/* RADIO + CHECKBOX */
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+  font-size: 0.8rem;
+}
+
+.radio-group input {
+  width: auto;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0;
+  font-size: 0.75rem;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+/* ================= BUTTON ================= */
+button {
+  width: 100%;
+  padding: 12px;
+
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(56,189,248,0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

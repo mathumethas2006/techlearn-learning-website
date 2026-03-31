@@ -1,0 +1,154 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #050b14;
+  color: #e0f7ff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  padding: 15px 40px;
+  background: #081726;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #00d4ff;
+}
+
+.navbar a {
+  color: #ccefff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  color: #00d4ff;
+}
+
+/* ===== MAIN ===== */
+.learning {
+  text-align: center;
+  padding: 40px;
+}
+
+/* ===== CONTAINER BOX (FIXED WIDTH) ===== */
+.selection-box,
+.content-page {
+  background: #0b1d33;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;   /* prevents stretching */
+  margin: 40px auto;  /* centers nicely */
+}
+
+/* ===== INPUTS ===== */
+input,
+select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00d4ff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00aacc;
+}
+
+/* ===== LISTS ===== */
+ul {
+  text-align: left;
+}
+
+/* ===== QUIZ BOX ===== */
+.quiz-box {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* ===== QUESTION CARD ===== */
+.question {
+  background: #112a45;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+/* ===== OPTIONS ===== */
+.question label {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0b1d33;
+  transition: 0.3s;
+}
+
+.question label:hover {
+  background: #1a3a5f;
+}
+
+/* ===== CORRECT / WRONG ===== */
+.correct {
+  background-color: #1f5e3b !important;
+  border: 2px solid #00ff99;
+  color: #e0f7ff;
+}
+
+.wrong {
+  background-color: #5e1f1f !important;
+  border: 2px solid #ff4d4d;
+  color: #e0f7ff;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.submit-btn {
+  margin-top: 20px;
+  background: #00d4ff;
+  color: black;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #00aacc;
+}
+
+/* ===== RESULT ===== */
+#result {
+  margin-top: 20px;
+  color: #00ffcc;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===== CENTER QUIZ CONTENT ===== */
+.quiz-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit-btn {
+  margin-top: 20px;
+  background: #00d4ff;
+  color: black;
+  font-weight: bold;
+
+  width: auto;        /* prevents full width */
+  display: inline-block; 
+  padding: 10px 25px;  /* better size */
+}

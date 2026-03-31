@@ -1,0 +1,119 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #050b14;
+  color: #e0f7ff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #081726;
+}
+
+.logo {
+  color: #00d4ff;
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  color: #ccefff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #00d4ff;
+}
+
+.navbar a.active {
+  color: #00d4ff;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 60vh;
+  background: url("/assets/circuit.png") no-repeat center center/cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  text-align: center;
+  color: #00d4ff;
+  padding-top: 80px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+/* ===== BUTTONS (FIXED) ===== */
+button {
+  padding: 10px 20px;
+  background: #00d4ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+
+  width: auto;            /* prevents full width */
+  display: inline-block;  /* keeps button compact */
+  max-width: fit-content;
+}
+
+button:hover {
+  background: #00aacc;
+}
+
+/* ===== BUTTON GROUP (VERTICAL LAYOUT) ===== */
+.button-group {
+  display: flex;
+  flex-direction: column; /* stacks buttons vertically */
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ===== EXPLORE SECTION ===== */
+.explore {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.explore-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.explore-card {
+  width: 260px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.6);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 15px;
+}
